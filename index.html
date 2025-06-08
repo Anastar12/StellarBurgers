@@ -11,5 +11,14 @@
     <div id="root"></div>
     <div id="modals"></div>
     <script src="/bundle.js"></script>
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>
