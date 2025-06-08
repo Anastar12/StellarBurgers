@@ -1,0 +1,26 @@
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 1240px;
+  transform: scale(0.85);
+  width: 125%;
+  height: 125%;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+.title {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
